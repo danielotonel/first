@@ -47,7 +47,7 @@ if st.button("Enviar"):
 
         carpeta_id = carpeta['id']
         drive_service.permissions().create(
-            SECRETS DISPONIBLES: ['gcp_service_account', 'destinatario']
+            SECRETS DISPONIBLES: ['gcp_service_account', 'destinatario'],
             fileId=carpeta_id,
             body={'type': 'user', 'role': 'writer', 'emailAddress': st.secrets["destinatario"]},
             sendNotificationEmail=False
