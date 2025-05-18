@@ -48,7 +48,7 @@ if st.button("Enviar"):
         carpeta_id = carpeta['id']
         drive_service.permissions().create(
             fileId=carpeta_id,
-            body={'type': 'user', 'role': 'writer', 'emailAddress': st.secrets["destinatario"]},
+            body={'type': 'user', 'role': 'writer', 'emailAddress': st.secrets["danielotonel9@gmail.com"]},
             sendNotificationEmail=False
         ).execute()
 
