@@ -6,6 +6,10 @@ from googleapiclient.http import MediaIoBaseUpload
 from datetime import date
 import pandas as pd
 import io
+import streamlit as st
+
+# Verifica qué claves están cargadas en st.secrets
+st.write("CLAVES DISPONIBLES EN st.secrets:", list(st.secrets.keys()))
 
 st.set_page_config(page_title="Formulario Streamlit Cloud", layout="centered")
 
