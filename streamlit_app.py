@@ -15,7 +15,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
 # Cargar credenciales desde st.secrets
 creds = Credentials.from_service_account_info(st.secrets["gcp_service_account"], scopes=SCOPES)
 client = gspread.authorize(creds)
-sheet = client.open("Hoja de cálculo sin título").sheet1
+sheet = client.open("hola_prueba").sheet1
 drive_service = build('drive', 'v3', credentials=creds)
 
 st.title("📝 Formulario Web con Drive y Sheets")
